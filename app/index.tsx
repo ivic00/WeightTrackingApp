@@ -1,10 +1,18 @@
+import PageWrapper from "@/src/layouts/PageWrapper";
 import React from "react";
-import { MD3LightTheme, PaperProvider } from "react-native-paper";
-import { Tabs } from "expo-router";
-import App from "@/App";
+import { StyleSheet, View } from "react-native";
+import { Text } from "react-native-paper";
 
-export default function Index() {
-  return <PaperProvider theme={MD3LightTheme}>
-    <App />
-  </PaperProvider>;
-}
+const index = () => {
+  return (
+    <PageWrapper>
+      <View>
+        <Text>Index Page</Text>
+      </View>
+    </PageWrapper>
+  );
+};
+
+export default index;
+
+const styles = StyleSheet.create({});
